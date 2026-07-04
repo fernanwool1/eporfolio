@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fernando &amp; His Interests — Fernando Woolcott</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .stub {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8rem var(--section-pad-x) 4rem;
+  }
+  .stub-eyebrow { margin-bottom: 1rem; }
+  .stub-title { font-size: clamp(2rem, 5vw, 3.2rem); margin-bottom: 1.25rem; }
+  .stub-body { max-width: 50ch; margin-bottom: 2.5rem; color: var(--text-200); }
+  .stub-topics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  .stub-topic {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid var(--bg-300);
+    border-radius: 999px;
+    color: var(--primary-300);
+  }
+</style>
+</head>
+<body>
+
+<div class="starfield" id="starfield" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html#home" class="nav-logo">FW<span class="nav-logo-dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#home" class="nav-link">Home</a>
+      <a href="index.html#about" class="nav-link">About</a>
+      <a href="index.html#education" class="nav-link">Education</a>
+      <a href="index.html#skills" class="nav-link">Skills</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="stub">
+    <p class="eyebrow stub-eyebrow">Fernando &amp; His Interests</p>
+    <h1 class="stub-title">This page is still being <span class="accent">written.</span></h1>
+    <p class="stub-body">Before I saw myself as someone in technology, I saw myself as someone trying to understand the world through music, poetry, and photography. This corner of the site will hold that side of the story soon.</p>
+    <div class="stub-topics">
+      <span class="stub-topic">Music</span>
+      <span class="stub-topic">Poetry</span>
+      <span class="stub-topic">Photography</span>
+    </div>
+    <a href="index.html#about" class="btn btn-outline">&larr; Back to the Portfolio</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>&copy; 2026 Fernando Woolcott. Built with intention.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fernando Woolcott — Computer Science Student</title>
+<meta name="description" content="Portfolio of Fernando Woolcott, Computer Science student at Columbia University focused on data engineering, DevOps, and software that serves people.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="starfield" id="starfield" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">FW<span class="nav-logo-dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active" data-section="home">Home</a>
+      <a href="#about" class="nav-link" data-section="about">About</a>
+      <a href="#education" class="nav-link" data-section="education">Education</a>
+      <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+      <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <section id="home" class="section hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow reveal-chars">Computer Science Student &middot; Columbia University</p>
+        <h1 class="hero-title reveal-chars">Hi, I'm<br><span class="hero-name">Fernando Woolcott.</span></h1>
+        <p class="hero-tagline reveal-chars">I build software the way I learned to run a warehouse floor: watch where things break, then make them clearer.</p>
+        <p class="hero-body reveal-up reveal-delay-1">Originally from Peru, I came to computer science through migration, work, community college, and service. My interests in software, data, music, poetry, and photography shape the way I build with attention to people, systems, and the stories behind them.</p>
+        <div class="hero-actions reveal-up reveal-delay-2">
+          <a href="#about" class="btn btn-solid">My Journey</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit-field">
+          <div class="orbit-ring ring-1"></div>
+          <div class="orbit-ring ring-2"></div>
+          <div class="orbit-ring ring-3">
+            <span class="satellite"></span>
+          </div>
+          <div class="planet">
+            <div class="planet-shade"></div>
+            <div class="planet-terminator"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="section-head">
+      <p class="eyebrow reveal-chars">About</p>
+      <h2 class="section-title reveal-chars">About <span class="accent">Me</span></h2>
+    </div>
+
+    <div class="about-inner">
+      <div class="about-photo reveal-up">
+        <div class="photo-orbit photo-orbit-1"></div>
+        <div class="photo-orbit photo-orbit-2"></div>
+        <div class="photo-circle" id="photoCircle">
+          <span class="photo-initials">FW</span>
+          <span class="photo-hint">Photo coming soon</span>
+        </div>
+      </div>
+
+      <h3 class="about-role reveal-chars">CS Student &middot; Aspiring Data &amp; Software Engineer</h3>
+
+      <div class="about-text">
+        <p>I'm a Computer Science student at Columbia University with a background shaped by migration, community college, full-time work, and real-world operations. Before software, I worked at Baldor Specialty Foods, where I learned how businesses depend on clear systems, communication, and fast problem-solving.</p>
+        <p>Now, I build practical software, data, and automation tools that make complicated systems easier to understand and improve. My interests in music, poetry, and photography also shape how I approach technology: with creativity, empathy, and attention to the human side of every problem.</p>
+      </div>
+
+      <a href="fernando.html" class="btn btn-outline about-more reveal-up reveal-delay-1">More About Fernando &rarr;</a>
+    </div>
+  </section>
+
+  <!-- MOTTO STRIP -->
+  <section class="motto-strip">
+    <p class="motto-text reveal-chars">&ldquo;Studying and working is the way to success, but only service gives purpose to it.&rdquo;</p>
+    <p class="motto-author reveal-up reveal-delay-1">— Fernando Woolcott</p>
+  </section>
+
+  <!-- EDUCATION / EXPERIENCE -->
+  <section id="education" class="section education">
+    <div class="section-head">
+      <p class="eyebrow reveal-chars">Journey</p>
+      <h2 class="section-title reveal-chars">Education <span class="accent">&amp; Experience</span></h2>
+    </div>
+
+    <div class="timeline-grid">
+      <div class="timeline-col">
+        <h3 class="timeline-heading">Education</h3>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card">
+              <p class="timeline-date">Mar 2020 &ndash; Dec 2025</p>
+              <h4 class="timeline-title">Bachelor in Business Administration</h4>
+              <p class="timeline-org">Universidad Tecnológica del Perú &middot; Lima, Peru</p>
+              <p class="timeline-desc">Early grounding in how organizations actually run — budgets, operations, and people.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card">
+              <p class="timeline-date">Mar 2023 &ndash; Jun 2025</p>
+              <h4 class="timeline-title">Associate of Science, Computer Science</h4>
+              <p class="timeline-org">LaGuardia Community College, CUNY &middot; New York, NY</p>
+              <p class="timeline-desc">Built my CS foundation while working full time, then transferred with it.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card">
+              <p class="timeline-date">Expected Dec 2027</p>
+              <h4 class="timeline-title">Bachelor of Science, Computer Science</h4>
+              <p class="timeline-org">Columbia University, School of General Studies &middot; New York, NY</p>
+              <p class="timeline-desc">Transfer student focused on data engineering, systems, and applied AI.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="timeline-col">
+        <h3 class="timeline-heading">Experience</h3>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card">
+              <p class="timeline-date">Feb 2015 &ndash; Dec 2020</p>
+              <h4 class="timeline-title">Operations Associate</h4>
+              <p class="timeline-org">Inversiones Agucel (Family Business) &middot; Tarma, Peru</p>
+              <p class="timeline-desc">Helped run a family business from age 12 — inventory, customer service, and leading a small team, including through COVID as accounting assistant manager.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card">
+              <p class="timeline-date">Jun 2021 &ndash; Oct 2025</p>
+              <h4 class="timeline-title">Rack Picker &rarr; Team Leader</h4>
+              <p class="timeline-org">Baldor Specialty Foods &middot; Bronx, NY</p>
+              <p class="timeline-desc">Promoted from picker to team leader; built Excel-based reporting and inventory-audit tools used across 4 departments and 30+ employees.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card">
+              <p class="timeline-date">Oct 2024 &ndash; Dec 2024</p>
+              <h4 class="timeline-title">Marketing &amp; Research Assistant</h4>
+              <p class="timeline-org">The Best Shades &middot; Manhattan, NY</p>
+              <p class="timeline-desc">Managed outreach to 1,000+ contacts, helped bring in 100+ new customers, and pitched ideas for the company website.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills">
+    <div class="section-head">
+      <p class="eyebrow reveal-chars">Toolkit</p>
+      <h2 class="section-title reveal-chars">My <span class="accent">Skills</span></h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skills-col">
+        <h3 class="skills-heading">Coding</h3>
+        <div class="skill-bars">
+          <div class="skill-bar" data-percent="90">
+            <div class="skill-bar-label"><span>HTML &amp; CSS</span><span class="skill-percent">90%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill-bar" data-percent="85">
+            <div class="skill-bar-label"><span>Python</span><span class="skill-percent">85%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill-bar" data-percent="80">
+            <div class="skill-bar-label"><span>SQL</span><span class="skill-percent">80%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill-bar" data-percent="75">
+            <div class="skill-bar-label"><span>JavaScript</span><span class="skill-percent">75%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill-bar" data-percent="65">
+            <div class="skill-bar-label"><span>C / C++</span><span class="skill-percent">65%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-col">
+        <h3 class="skills-heading">Cloud &amp; Data</h3>
+        <div class="skill-bars">
+          <div class="skill-bar" data-percent="90">
+            <div class="skill-bar-label"><span>Operations &amp; Team Leadership</span><span class="skill-percent">90%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill-bar" data-percent="80">
+            <div class="skill-bar-label"><span>Automation &amp; Scripting</span><span class="skill-percent">80%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill-bar" data-percent="75">
+            <div class="skill-bar-label"><span>Azure DevOps &amp; CI/CD</span><span class="skill-percent">75%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill-bar" data-percent="75">
+            <div class="skill-bar-label"><span>Azure Data Factory</span><span class="skill-percent">75%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill-bar" data-percent="70">
+            <div class="skill-bar-label"><span>Databricks</span><span class="skill-percent">70%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="languages-row">
+      <h3 class="skills-heading">Languages</h3>
+      <div class="language-tags">
+        <span class="language-tag">Spanish <em>Native</em></span>
+        <span class="language-tag">Quechua <em>Native</em></span>
+        <span class="language-tag">English <em>Fluent</em></span>
+        <span class="language-tag">Italian <em>Proficient</em></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="section-head">
+      <p class="eyebrow reveal-chars">Say Hello</p>
+      <h2 class="section-title reveal-chars">Contact <span class="accent">Me</span></h2>
+    </div>
+
+    <div class="contact-inner">
+      <div class="contact-info">
+        <p class="contact-lead reveal-up">Open to internships, collaborations, and conversations about data, systems, or the people they're meant to serve.</p>
+        <ul class="contact-list reveal-up reveal-delay-1">
+          <li><span class="contact-label">Email</span><a href="mailto:fernawool@gmail.com">fernawool@gmail.com</a></li>
+          <li><span class="contact-label">Phone</span><a href="tel:+19178623606">917-862-3606</a></li>
+          <li><span class="contact-label">Location</span><span>New York City, NY</span></li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal-up reveal-delay-2" id="contactForm">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="phone">Mobile Number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-field">
+            <label for="subject">Email Subject</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-solid form-submit">Submit</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; 2026 Fernando Woolcott. Built with intention.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
