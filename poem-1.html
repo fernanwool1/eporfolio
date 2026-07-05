@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>No quiero alejarme — Fernando Woolcott</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/poetry.css">
+</head>
+<body>
+
+<div class="starfield" id="starfield" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html#home" class="nav-logo">FW<span class="nav-logo-dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#home" class="nav-link">Home</a>
+      <a href="index.html#about" class="nav-link">About</a>
+      <a href="index.html#education" class="nav-link">Education</a>
+      <a href="index.html#skills" class="nav-link">Skills</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="section poem-page" id="poemPage" data-lang="es">
+    <p class="eyebrow reveal-chars poetry-back-eyebrow"><a href="poetry.html">&larr; The Poems</a></p>
+
+    <div class="section-head poem-page-head">
+      <p class="eyebrow reveal-chars">Poem I</p>
+      <h1 class="section-title reveal-chars poem-page-title">
+        <span data-lang-text="es">No quiero alejarme</span>
+        <span data-lang-text="en">I Do Not Want to Walk Away</span>
+      </h1>
+    </div>
+
+    <div class="poem-theme-tags reveal-up">
+      <span class="poem-theme-tag"><span data-lang-text="es">Amor</span><span data-lang-text="en">Love</span></span>
+      <span class="poem-theme-tag"><span data-lang-text="es">Comenzar de nuevo</span><span data-lang-text="en">Starting over</span></span>
+      <span class="poem-theme-tag"><span data-lang-text="es">Timidez</span><span data-lang-text="en">Timidity</span></span>
+      <span class="poem-theme-tag"><span data-lang-text="es">Paz</span><span data-lang-text="en">Peace</span></span>
+    </div>
+
+    <div class="lang-toggle poem-page-toggle" role="group" aria-label="Poem language">
+      <button type="button" class="lang-btn is-active" data-lang="es">ES</button>
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <img class="poem-page-divider reveal-up" src="assets/poetry/crescent_divider_transparent.png" alt="">
+
+    <div class="poem-layout">
+      <aside class="poem-sidebar poem-sidebar-left reveal-up">
+        <div class="poem-info-card">
+          <p class="poem-info-title"><span data-lang-text="es">Sobre este poema</span><span data-lang-text="en">About this poem</span></p>
+
+          <div class="poem-info-row">
+            <span class="poem-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg></span>
+            <div>
+              <p class="poem-info-label"><span data-lang-text="es">Temas</span><span data-lang-text="en">Themes</span></p>
+              <p class="poem-info-value"><span data-lang-text="es">Amor, comienzos, timidez</span><span data-lang-text="en">Love, new beginnings, shyness</span></p>
+            </div>
+          </div>
+
+          <div class="poem-info-row">
+            <span class="poem-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg></span>
+            <div>
+              <p class="poem-info-label"><span data-lang-text="es">Edad</span><span data-lang-text="en">Age</span></p>
+              <p class="poem-info-value"><span data-lang-text="es">A los 15</span><span data-lang-text="en">At 15</span></p>
+            </div>
+          </div>
+
+          <div class="poem-info-row">
+            <span class="poem-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 4 5.5 4 9s-1.5 6.5-4 9c-2.5-2.5-4-5.5-4-9s1.5-6.5 4-9Z"/></svg></span>
+            <div>
+              <p class="poem-info-label"><span data-lang-text="es">Idioma original</span><span data-lang-text="en">Original language</span></p>
+              <p class="poem-info-value"><span data-lang-text="es">Español</span><span data-lang-text="en">Spanish</span></p>
+            </div>
+          </div>
+
+          <div class="poem-info-row">
+            <span class="poem-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+            <div>
+              <p class="poem-info-label"><span data-lang-text="es">Tiempo de lectura</span><span data-lang-text="en">Reading time</span></p>
+              <p class="poem-info-value">1 min</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="poem-meaning-box">
+          <img class="poem-meaning-icon" src="assets/poetry/icon_love_heart_transparent.png" alt="">
+          <p class="poem-meaning-title"><span data-lang-text="es">Qué significa este poema</span><span data-lang-text="en">What this poem means</span></p>
+          <p data-lang-text="es">Este poema trata sobre darme cuenta de que el cariño se convirtió en apego sin que lo notara. Comienza con incertidumbre &mdash;una sonrisa, unos ojos, un sentimiento que no puedo explicar&mdash; y termina con el miedo a perder a la persona que se convirtió en mi paz.</p>
+          <p data-lang-text="en">This poem is about realizing that affection has quietly become attachment. It begins with uncertainty &mdash; a smile, a pair of eyes, a feeling the speaker cannot explain &mdash; and ends with the fear of losing the person who became peace.</p>
+        </div>
+
+        <div class="poem-sidebar-feather">
+          <img src="assets/poetry/poetry-quill.png" alt="">
+        </div>
+      </aside>
+
+      <article class="poem-main reveal-up">
+        <span class="poem-drop-cap" data-lang-text="es">Q</span>
+        <span class="poem-drop-cap" data-lang-text="en">W</span>
+      <div class="poem-full-text" data-lang-text="es">
+        <p>¿Qué me gustó?<br>¿De qué me enamoré?<br>¿Será esa sonrisa<br>o serán esos ojos?</p>
+        <p>Yo no lo sé,<br>pero poco a poco<br>algo me atrapó.</p>
+        <p>Quizás, por fin,<br>vuelvo a empezar,<br>ya que en ti<br>mi paz puedo hallar.</p>
+        <p>Tal vez al inicio<br>no te pude hablar,<br>por mi timidez, quizás;<br>pero después de acercarme,<br>me di cuenta<br>de que no quiero alejarme.</p>
+      </div>
+
+      <div class="poem-full-text" data-lang-text="en">
+        <p>What did I like?<br>What did I fall in love with?<br>Was it your smile,<br>or was it your eyes?</p>
+        <p>I do not know,<br>but little by little,<br>something about you caught me.</p>
+        <p>Maybe, at last,<br>I am beginning again,<br>because in you<br>I may find my peace.</p>
+        <p>Perhaps at first<br>I could not speak to you,<br>maybe because of my shyness;<br>but after getting closer,<br>I realized<br>I do not want to walk away.</p>
+      </div>
+
+      <img class="poem-main-lotus reveal-up" src="assets/poetry/blue_lotus_water_transparent.png" alt="">
+      </article>
+
+      <aside class="poem-sidebar poem-sidebar-right reveal-up">
+        <div class="poem-nav-list">
+          <a href="poem-4.html" class="poem-nav-item">
+            <span class="poem-nav-thumb"><img src="assets/poetry/poem_card_bg_01_lantern_memory.png" alt=""></span>
+            <div>
+              <p class="poem-nav-label"><span data-lang-text="es">Anterior</span><span data-lang-text="en">Previous</span></p>
+              <p class="poem-nav-title"><span data-lang-text="es">Bajo la tenue llama del verano</span><span data-lang-text="en">Beneath the Summer's Faint Flame</span></p>
+              <p class="poem-nav-desc"><span data-lang-text="es">Un viaje simbólico a través de la negación, el juicio y el renacimiento.</span><span data-lang-text="en">A symbolic journey through denial, judgment, and rebirth.</span></p>
+            </div>
+          </a>
+          <a href="poem-2.html" class="poem-nav-item is-next">
+            <span class="poem-nav-thumb"><img src="assets/poetry/poem_card_bg_03_rainy_september.png" alt=""></span>
+            <div>
+              <p class="poem-nav-label"><span data-lang-text="es">Siguiente</span><span data-lang-text="en">Next</span></p>
+              <p class="poem-nav-title"><span data-lang-text="es">Aquel día lluvioso de septiembre</span><span data-lang-text="en">That Rainy Day in September</span></p>
+              <p class="poem-nav-desc"><span data-lang-text="es">Una despedida bajo la lluvia que se vuelve imposible de olvidar.</span><span data-lang-text="en">A rainy farewell that becomes impossible to forget.</span></p>
+            </div>
+          </a>
+          <a href="poetry.html" class="poem-explore-card">
+            <span class="poem-explore-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H12v18H6.5A2.5 2.5 0 0 1 4 18.5v-13Z"/><path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H12v18h5.5a2.5 2.5 0 0 0 2.5-2.5v-13Z"/></svg></span>
+            <div>
+              <p class="poem-explore-title"><span data-lang-text="es">Explorar más</span><span data-lang-text="en">Explore more</span></p>
+              <p class="poem-explore-desc"><span data-lang-text="es">Ver los cuatro poemas</span><span data-lang-text="en">View all poems</span></p>
+            </div>
+          </a>
+        </div>
+
+        <div class="poem-illustration">
+          <img src="assets/poetry/poetry-quill.png" alt="">
+          <p class="poem-illustration-tag">
+            <span data-lang-text="es">Las palabras también son constelaciones.</span>
+            <span data-lang-text="en">Words are also constellations.</span>
+          </p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="poem-behind reveal-up">
+      <div class="poem-behind-text">
+        <p class="poem-behind-heading"><span data-lang-text="es">Detrás del poema</span><span data-lang-text="en">Behind the poem</span></p>
+        <p data-lang-text="es">Escrito a los quince años, este poema captura el momento en que la timidez se convierte en cariño. Pertenece al mundo emocional del primer amor, los comienzos silenciosos y el miedo a alejarse de alguien que se siente como paz.</p>
+        <p data-lang-text="en">Written at fifteen, this poem captures the moment when shyness becomes affection. It belongs to the emotional world of first love, quiet beginnings, and the fear of walking away from someone who feels like peace.</p>
+      </div>
+      <div class="poem-behind-image">
+        <img src="assets/poetry/quote_background_andes_twilight.png" alt="">
+      </div>
+    </div>
+
+    <p class="poem-page-tagline reveal-up">
+      <span data-lang-text="es">Escribir es mi forma de no desaparecer.</span>
+      <span data-lang-text="en">Writing is my way of not disappearing.</span>
+    </p>
+
+    <div class="poem-bottom-nav reveal-up">
+      <a href="poem-4.html" class="poem-bottom-btn">&larr; <span data-lang-text="es">Poema anterior</span><span data-lang-text="en">Previous poem</span></a>
+      <a href="poetry.html" class="poem-bottom-btn"><span data-lang-text="es">Volver a los cuatro poemas</span><span data-lang-text="en">Back to four poems</span></a>
+      <a href="poem-2.html" class="poem-bottom-btn"><span data-lang-text="es">Poema siguiente</span><span data-lang-text="en">Next poem</span> &rarr;</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="footer-brand">
+      <a href="index.html#home" class="nav-logo">FW<span class="nav-logo-dot">.</span></a>
+      <p class="footer-tagline">Building systems, writing poems, and staying close to where I come from.</p>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-col-title">Explore</p>
+      <a href="index.html#about">About</a>
+      <a href="index.html#education">Education</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="music.html">Music</a>
+      <a href="poetry.html">Poetry</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-col-title">Poetry</p>
+      <a href="poetry.html">Four Poems at Fifteen</a>
+      <a href="poem-1.html">Poem I</a>
+      <a href="poem-2.html">Poem II</a>
+      <a href="poem-3.html">Poem III</a>
+      <a href="poem-4.html">Poem IV</a>
+    </div>
+
+    <div class="footer-col footer-connect">
+      <p class="footer-col-title">Let's Connect</p>
+      <a href="mailto:fernawool@gmail.com" class="footer-email">fernanwool@hotmail.com</a>
+      <a href="index.html#contact" class="btn btn-solid footer-say-hello">Say Hello</a>
+    </div>
+  </div>
+
+  <div class="site-footer-bottom">
+    <p>&copy; 2026 Fernando Woolcott. Built with intention.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/poetry.js"></script>
+</body>
+</html>

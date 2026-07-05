@@ -8,35 +8,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-<style>
-  .stub {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 8rem var(--section-pad-x) 4rem;
-  }
-  .stub-eyebrow { margin-bottom: 1rem; }
-  .stub-title { font-size: clamp(2rem, 5vw, 3.2rem); margin-bottom: 1.25rem; }
-  .stub-body { max-width: 50ch; margin-bottom: 2.5rem; color: var(--text-200); }
-  .stub-topics {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 3rem;
-  }
-  .stub-topic {
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
-    padding: 0.6rem 1.2rem;
-    border: 1px solid var(--bg-300);
-    border-radius: 999px;
-    color: var(--primary-300);
-  }
-</style>
 </head>
 <body>
 
@@ -59,21 +30,76 @@
 </header>
 
 <main>
-  <section class="stub">
-    <p class="eyebrow stub-eyebrow">Fernando &amp; His Interests</p>
-    <h1 class="stub-title">This page is still being <span class="accent">written.</span></h1>
-    <p class="stub-body">Before I saw myself as someone in technology, I saw myself as someone trying to understand the world through music, poetry, and photography. This corner of the site will hold that side of the story soon.</p>
-    <div class="stub-topics">
-      <span class="stub-topic">Music</span>
-      <span class="stub-topic">Poetry</span>
-      <span class="stub-topic">Photography</span>
+  <section class="section hub">
+    <div class="section-head hub-head">
+      <p class="eyebrow reveal-chars">Fernando &amp; His Interests</p>
+      <h1 class="section-title reveal-chars">Beyond <span class="accent">the Code</span></h1>
     </div>
-    <a href="index.html#about" class="btn btn-outline">&larr; Back to the Portfolio</a>
+
+    <p class="hub-intro reveal-up">Before I saw myself as someone in technology, I saw myself as someone trying to understand the world through music, poetry, and photography. These aren't separate from my work — they shape how I think, design, and build.</p>
+
+    <div class="hub-tiles">
+      <a href="poetry.html" class="hub-tile hub-tile-live reveal-up">
+        <span class="hub-tile-eyebrow">01</span>
+        <h2 class="hub-tile-title">Poetry</h2>
+        <p class="hub-tile-body">Four poems written at fifteen, in Spanish and English, about love, starting over, and regret.</p>
+        <span class="hub-tile-cta">Read the poems &rarr;</span>
+      </a>
+
+      <a href="music.html" class="hub-tile hub-tile-live reveal-up reveal-delay-1">
+        <span class="hub-tile-eyebrow">02</span>
+        <h2 class="hub-tile-title">Music</h2>
+        <p class="hub-tile-body">The instruments I play and the feelings behind every sound.</p>
+        <span class="hub-tile-cta">Explore the music &rarr;</span>
+      </a>
+
+      <div class="hub-tile hub-tile-soon reveal-up reveal-delay-2">
+        <span class="hub-tile-eyebrow">03</span>
+        <h2 class="hub-tile-title">Photography</h2>
+        <p class="hub-tile-body">Coming soon.</p>
+      </div>
+    </div>
+
+    <a href="index.html#about" class="btn btn-outline hub-back">&larr; Back to the Portfolio</a>
   </section>
 </main>
 
-<footer class="footer">
-  <p>&copy; 2026 Fernando Woolcott. Built with intention.</p>
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="footer-brand">
+      <a href="index.html#home" class="nav-logo">FW<span class="nav-logo-dot">.</span></a>
+      <p class="footer-tagline">Building systems, writing poems, and staying close to where I come from.</p>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-col-title">Explore</p>
+      <a href="index.html#about">About</a>
+      <a href="index.html#education">Education</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="music.html">Music</a>
+      <a href="poetry.html">Poetry</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-col-title">Poetry</p>
+      <a href="poetry.html">Four Poems at Fifteen</a>
+      <a href="poem-1.html">Poem I</a>
+      <a href="poem-2.html">Poem II</a>
+      <a href="poem-3.html">Poem III</a>
+      <a href="poem-4.html">Poem IV</a>
+    </div>
+
+    <div class="footer-col footer-connect">
+      <p class="footer-col-title">Let's Connect</p>
+      <a href="mailto:fernawool@gmail.com" class="footer-email">fernanwool@hotmail.com</a>
+      <a href="index.html#contact" class="btn btn-solid footer-say-hello">Say Hello</a>
+    </div>
+  </div>
+
+  <div class="site-footer-bottom">
+    <p>&copy; 2026 Fernando Woolcott. Built with intention.</p>
+  </div>
 </footer>
 
 <script src="js/main.js"></script>

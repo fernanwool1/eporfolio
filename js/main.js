@@ -4,17 +4,38 @@
   /* Starfield */
   const starfield = document.getElementById('starfield');
   if (starfield && !prefersReducedMotion) {
-    const STAR_COUNT = 80;
+    const STAR_COUNT = 320;
     const frag = document.createDocumentFragment();
     for (let i = 0; i < STAR_COUNT; i++) {
       const star = document.createElement('span');
+      const isBig = Math.random() < 0.12;
+      const size = isBig ? 2.5 + Math.random() * 2.5 : 1 + Math.random() * 1.4;
+      star.style.width = `${size.toFixed(1)}px`;
+      star.style.height = `${size.toFixed(1)}px`;
       star.style.top = `${Math.random() * 100}%`;
       star.style.left = `${Math.random() * 100}%`;
       star.style.animationDelay = `${Math.random() * 4}s`;
+      star.style.animationDuration = `${3 + Math.random() * 3}s`;
       star.style.opacity = (0.2 + Math.random() * 0.5).toFixed(2);
+      if (isBig) star.style.boxShadow = `0 0 ${(size * 2).toFixed(1)}px rgba(255, 255, 255, 0.55)`;
       frag.appendChild(star);
     }
     starfield.appendChild(frag);
+  }
+
+  /* Night scene: fixed moonlit mountain backdrop shared across every page */
+  if (starfield) {
+    const nightScene = document.createElement('div');
+    nightScene.className = 'night-scene';
+    nightScene.setAttribute('aria-hidden', 'true');
+    nightScene.innerHTML = `
+      <img class="scene-moon" src="assets/background/bg-moon.png" alt="">
+      <img class="scene-cloud scene-cloud-1" src="assets/background/bg-cloud-1.png" alt="">
+      <img class="scene-cloud scene-cloud-2" src="assets/background/bg-cloud-2.png" alt="">
+      <img class="scene-mist" src="assets/background/bg-mist.png" alt="">
+      <img class="scene-mountains-near" src="assets/background/bg-mountains-near.png" alt="">
+    `;
+    starfield.after(nightScene);
   }
 
   /* Nav: scrolled state */
@@ -117,7 +138,7 @@
         revealObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.2 });
+  }, { threshold: 0, rootMargin: '0px 0px -10% 0px' });
   revealTargets.forEach(t => revealObserver.observe(t));
 
   /* Fast smooth-scroll for in-page anchor links (nav, hero buttons, scroll cue) */
