@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Goodbye Letter — Fernando Woolcott</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/poetry.css">
+</head>
+<body>
+
+<div class="starfield" id="starfield" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html#home" class="nav-logo">FW<span class="nav-logo-dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#home" class="nav-link">Home</a>
+      <a href="index.html#about" class="nav-link">About</a>
+      <a href="index.html#education" class="nav-link">Education</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="index.html#skills" class="nav-link">Skills</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="section poem-page" id="poemPage" data-lang="en">
+    <p class="eyebrow reveal-chars poetry-back-eyebrow"><a href="poems.html">&larr; Poems Library</a></p>
+
+    <div class="section-head poem-page-head">
+      <p class="eyebrow reveal-chars">Poem VII</p>
+      <h1 class="section-title reveal-chars poem-page-title">
+        <span data-lang-text="es">Una carta de despedida</span>
+        <span data-lang-text="en">A Goodbye Letter</span>
+      </h1>
+    </div>
+
+    <div class="poem-theme-tags reveal-up">
+      <span class="poem-theme-tag"><span data-lang-text="es">Migración</span><span data-lang-text="en">Migration</span></span>
+      <span class="poem-theme-tag"><span data-lang-text="es">Familia</span><span data-lang-text="en">Family</span></span>
+      <span class="poem-theme-tag"><span data-lang-text="es">Pérdida</span><span data-lang-text="en">Loss</span></span>
+      <span class="poem-theme-tag"><span data-lang-text="es">Identidad</span><span data-lang-text="en">Identity</span></span>
+    </div>
+
+    <div class="lang-toggle poem-page-toggle" role="group" aria-label="Poem language">
+      <button type="button" class="lang-btn" data-lang="es">ES</button>
+      <button type="button" class="lang-btn is-active" data-lang="en">EN</button>
+    </div>
+
+    <img class="poem-page-divider reveal-up" src="assets/poetry/crescent_divider_transparent.png" alt="">
+
+    <div class="poem-layout">
+      <aside class="poem-sidebar poem-sidebar-left reveal-up">
+        <div class="poem-info-card">
+          <p class="poem-info-title"><span data-lang-text="es">Sobre este poema</span><span data-lang-text="en">About this poem</span></p>
+
+          <div class="poem-info-row">
+            <span class="poem-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg></span>
+            <div>
+              <p class="poem-info-label"><span data-lang-text="es">Temas</span><span data-lang-text="en">Themes</span></p>
+              <p class="poem-info-value"><span data-lang-text="es">Migración, familia, pérdida, identidad</span><span data-lang-text="en">Migration, family, loss, identity</span></p>
+            </div>
+          </div>
+
+          <div class="poem-info-row">
+            <span class="poem-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg></span>
+            <div>
+              <p class="poem-info-label"><span data-lang-text="es">Año</span><span data-lang-text="en">Year</span></p>
+              <p class="poem-info-value">2024&ndash;2025</p>
+            </div>
+          </div>
+
+          <div class="poem-info-row">
+            <span class="poem-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 4 5.5 4 9s-1.5 6.5-4 9c-2.5-2.5-4-5.5-4-9s1.5-6.5 4-9Z"/></svg></span>
+            <div>
+              <p class="poem-info-label"><span data-lang-text="es">Idioma original</span><span data-lang-text="en">Original language</span></p>
+              <p class="poem-info-value"><span data-lang-text="es">Inglés</span><span data-lang-text="en">English</span></p>
+            </div>
+          </div>
+
+          <div class="poem-info-row">
+            <span class="poem-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+            <div>
+              <p class="poem-info-label"><span data-lang-text="es">Tiempo de lectura</span><span data-lang-text="en">Reading time</span></p>
+              <p class="poem-info-value">2&ndash;3 min</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="poem-meaning-box">
+          <img class="poem-meaning-icon" src="assets/poetry/icon_memories_cloud_transparent.png" alt="">
+          <p class="poem-meaning-title"><span data-lang-text="es">Qué significa este poema</span><span data-lang-text="en">What this poem means</span></p>
+          <p data-lang-text="es">Una carta de despedida es un poema reflexivo e inconcluso sobre enfrentar a una versión más joven de uno mismo. A través de la imagen de una carta y un espejo, el poema explora los sueños perdidos, la migración, la familia, la decepción y el dolor de despedirse de quien el hablante solía ser.</p>
+          <p data-lang-text="en">A Goodbye Letter is an unfinished reflective poem about confronting a younger version of oneself. Through the image of a letter and a mirror, the poem explores lost dreams, migration, family, disappointment, and the pain of saying goodbye to who the speaker used to be.</p>
+        </div>
+
+        <div class="poem-sidebar-feather">
+          <img src="assets/poetry/poetry-quill.png" alt="">
+        </div>
+      </aside>
+
+      <article class="poem-main reveal-up">
+        <span class="poem-drop-cap" data-lang-text="es">R</span>
+        <span class="poem-drop-cap" data-lang-text="en">I</span>
+      <div class="poem-full-text" data-lang-text="es">
+        <p class="poem-stanza-label">I</p>
+        <p>Recibí tu carta ayer,<br>pero siento que ya la había leído.</p>
+        <p>Creo que recuerdo tu voz,<br>pero tú no reconoces la mía.</p>
+        <p>¿Sientes pena por mí?<br>Porque yo me siento feliz por quien fuiste.</p>
+        <p>Dijiste que querías ser rico,<br>pero soy pobre.</p>
+        <p>Dijiste que querías ser científico,<br>pero soy un perdedor.</p>
+        <p>Dijiste que no querías despedirte,<br>así que yo lo haré por ti.</p>
+        <p>¿Para qué necesitamos sueños,<br>si esta pesadilla ya es suficiente?</p>
+
+        <p class="poem-stanza-label">II</p>
+        <p>&ldquo;¿Dónde has estado?&rdquo;,<br>preguntó el niño.</p>
+        <p>&ldquo;He estado ocupado&rdquo;,<br>susurró el espejo.</p>
+        <p>&ldquo;No recuerdo tu rostro.<br>Los años no te trataron bien, ya veo.</p>
+        <p>¿Eres lo que se suponía que debías ser?<br>Porque la luz en tus ojos ha desaparecido.</p>
+        <p>¿Cómo está mamá?<br>¿Está bien?</p>
+        <p>Yo no pude vivir con ella,<br>pero tú aprendiste a vivir sin ella.</p>
+        <p>¿Cómo está papá?<br>¿Sigue siendo fuerte?</p>
+        <p>Él solía ser tu héroe,<br>pero para que los héroes se vuelvan leyendas,<br>primero tienen que caer.&rdquo;</p>
+
+        <p class="poem-stanza-label">III</p>
+        <p>¿Cómo podría saber lo que quiero,<br>si ni siquiera sé quién soy?</p>
+        <p>No me gusta a dónde migré,<br>ni cómo terminé.</p>
+        <p>Los que me criaron ya están muertos.</p>
+        <p>Mis sueños rotos aceptaron su destino.<br>Mi esperanza más tierna se quemó.</p>
+        <p>No quiero decirlo,<br>pero estoy muerto.</p>
+        <p>¿Cómo puedes mirar al espejo?<br>A mí no me gusta lo que veo.</p>
+        <p>Así que, por favor, deja de mirarme<br>y vuelve al lugar donde solías vivir.</p>
+        <p>Una despedida sería fácil para mí,<br>pero una disculpa me pondría de rodillas.</p>
+        <p>Incluso las palabras que escribo me duelen,<br>pero no hay otra forma de decir esto.</p>
+      </div>
+
+      <div class="poem-full-text" data-lang-text="en">
+        <p class="poem-stanza-label">I</p>
+        <p>I received your letter yesterday,<br>but I feel I had already read it.</p>
+        <p>I think I remember your voice,<br>but you do not recognize mine.</p>
+        <p>Do you feel sorry for me?<br>Because I feel happy for who you were.</p>
+        <p>You said you wanted to be rich,<br>but I am poor.</p>
+        <p>You said you wanted to be a scientist,<br>but I am a loser.</p>
+        <p>You said you did not want to say goodbye,<br>so I will do it for you.</p>
+        <p>Why do we need dreams,<br>when this nightmare is enough?</p>
+
+        <p class="poem-stanza-label">II</p>
+        <p>&ldquo;Where have you been?&rdquo;<br>the child asked.</p>
+        <p>&ldquo;I have been busy,&rdquo;<br>the mirror whispered.</p>
+        <p>&ldquo;I do not remember your face.<br>The years did not treat you well, I see.</p>
+        <p>Are you what you were supposed to be?<br>Because the light in your eyes has disappeared.</p>
+        <p>How is Mom?<br>Is she okay?</p>
+        <p>I could not live with her,<br>but you learned to live without her.</p>
+        <p>How is Dad?<br>Is he still strong?</p>
+        <p>He used to be your hero,<br>but for heroes to become legends,<br>they have to fall.&rdquo;</p>
+
+        <p class="poem-stanza-label">III</p>
+        <p>How could I know what I want?<br>I do not even know who I am.</p>
+        <p>I do not like where I migrated to,<br>nor how I ended up.</p>
+        <p>The ones who raised me are dead.</p>
+        <p>My broken dreams accepted their fate.<br>My tender hope has burned.</p>
+        <p>I do not want to say it,<br>but I am dead.</p>
+        <p>How can you look into the mirror?<br>I do not really like what I see.</p>
+        <p>So please, stop looking at me,<br>and go back to where you used to live.</p>
+        <p>A goodbye would be easy for me,<br>but an apology would put me on my knees.</p>
+        <p>Even the words I write hurt me,<br>but there is no other way to say this.</p>
+      </div>
+
+      <img class="poem-main-lotus reveal-up" src="assets/poetry/blue_lotus_water_transparent.png" alt="">
+      </article>
+
+      <aside class="poem-sidebar poem-sidebar-right reveal-up">
+        <div class="poem-nav-list">
+          <a href="poem-6.html" class="poem-nav-item">
+            <span class="poem-nav-thumb poem-nav-thumb-placeholder"><img src="assets/poetry/icon_nature_leaf_transparent.png" alt=""></span>
+            <div>
+              <p class="poem-nav-label"><span data-lang-text="es">Anterior</span><span data-lang-text="en">Previous</span></p>
+              <p class="poem-nav-title"><span data-lang-text="es">Camino</span><span data-lang-text="en">Path</span></p>
+              <p class="poem-nav-desc"><span data-lang-text="es">Estar cerca de alguien no siempre significa compartir su camino.</span><span data-lang-text="en">Being close to someone doesn't always mean sharing their path.</span></p>
+            </div>
+          </a>
+          <a href="poem-8.html" class="poem-nav-item is-next">
+            <span class="poem-nav-thumb poem-nav-thumb-placeholder"><img src="assets/poetry/icon_hope_star_transparent.png" alt=""></span>
+            <div>
+              <p class="poem-nav-label"><span data-lang-text="es">Siguiente</span><span data-lang-text="en">Next</span></p>
+              <p class="poem-nav-title"><span data-lang-text="es">El color del hogar</span><span data-lang-text="en">The Color of Home</span></p>
+              <p class="poem-nav-desc"><span data-lang-text="es">Volver a casa y descubrir que el hogar ya había cambiado.</span><span data-lang-text="en">Coming home to find that home had already changed.</span></p>
+            </div>
+          </a>
+          <a href="poems.html" class="poem-explore-card">
+            <span class="poem-explore-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H12v18H6.5A2.5 2.5 0 0 1 4 18.5v-13Z"/><path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H12v18h5.5a2.5 2.5 0 0 0 2.5-2.5v-13Z"/></svg></span>
+            <div>
+              <p class="poem-explore-title"><span data-lang-text="es">Explorar más</span><span data-lang-text="en">Explore more</span></p>
+              <p class="poem-explore-desc"><span data-lang-text="es">Ver todos los poemas</span><span data-lang-text="en">View all poems</span></p>
+            </div>
+          </a>
+        </div>
+
+        <div class="poem-illustration">
+          <img src="assets/poetry/poetry-quill.png" alt="">
+          <p class="poem-illustration-tag">
+            <span data-lang-text="es">Las palabras también son constelaciones.</span>
+            <span data-lang-text="en">Words are also constellations.</span>
+          </p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="poem-behind reveal-up">
+      <div class="poem-behind-text">
+        <p class="poem-behind-heading"><span data-lang-text="es">Detrás del poema</span><span data-lang-text="en">Behind the poem</span></p>
+        <p data-lang-text="es">Este poema inconcluso imagina una conversación entre dos versiones de la misma persona: el niño que alguna vez soñó, y el adulto formado por la migración, la pérdida y la decepción. Pertenece al mundo emocional de la confrontación, el duelo y la dificultad de perdonar en quién nos convertimos.</p>
+        <p data-lang-text="en">This unfinished poem imagines a conversation between two versions of the same person: the child who once dreamed, and the adult shaped by migration, loss, and disappointment. It belongs to the emotional world of confrontation, grief, and the difficulty of forgiving who we became.</p>
+      </div>
+      <div class="poem-behind-image">
+        <img src="assets/poetry/quote_background_andes_twilight.png" alt="">
+      </div>
+    </div>
+
+    <p class="poem-page-tagline reveal-up">
+      <span data-lang-text="es">Escribir es mi forma de no desaparecer.</span>
+      <span data-lang-text="en">Writing is my way of not disappearing.</span>
+    </p>
+
+    <div class="poem-bottom-nav reveal-up">
+      <a href="poem-6.html" class="poem-bottom-btn">&larr; <span data-lang-text="es">Poema anterior</span><span data-lang-text="en">Previous poem</span></a>
+      <a href="poems.html" class="poem-bottom-btn"><span data-lang-text="es">Volver a la biblioteca</span><span data-lang-text="en">Back to the library</span></a>
+      <a href="poem-8.html" class="poem-bottom-btn"><span data-lang-text="es">Poema siguiente</span><span data-lang-text="en">Next poem</span> &rarr;</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="footer-brand">
+      <a href="index.html#home" class="nav-logo">FW<span class="nav-logo-dot">.</span></a>
+      <p class="footer-tagline">Building systems, writing poems, and staying close to where I come from.</p>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-col-title">Explore</p>
+      <a href="index.html#about">About</a>
+      <a href="index.html#education">Education</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="music.html">Music</a>
+      <a href="poetry.html">Poetry</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-col-title">Poetry</p>
+      <a href="poetry.html">Four Poems at Fifteen</a>
+      <a href="poems.html">Poems Library</a>
+      <a href="poem-1.html">Poem I</a>
+      <a href="poem-2.html">Poem II</a>
+      <a href="poem-3.html">Poem III</a>
+      <a href="poem-4.html">Poem IV</a>
+      <a href="poem-5.html">Poem V</a>
+      <a href="poem-6.html">Poem VI</a>
+      <a href="poem-7.html">Poem VII</a>
+      <a href="poem-8.html">Poem VIII</a>
+    </div>
+
+    <div class="footer-col footer-connect">
+      <p class="footer-col-title">Let's Connect</p>
+      <a href="mailto:fernawool@gmail.com" class="footer-email">fernanwool@hotmail.com</a>
+      <a href="index.html#contact" class="btn btn-solid footer-say-hello">Say Hello</a>
+    </div>
+  </div>
+
+  <div class="site-footer-bottom">
+    <p>&copy; 2026 Fernando Woolcott. Built with intention.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/poetry.js"></script>
+</body>
+</html>

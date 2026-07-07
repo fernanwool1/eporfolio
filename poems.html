@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poems Library — Fernando Woolcott</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/poetry.css">
+</head>
+<body>
+
+<div class="starfield" id="starfield" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html#home" class="nav-logo">FW<span class="nav-logo-dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#home" class="nav-link">Home</a>
+      <a href="index.html#about" class="nav-link">About</a>
+      <a href="index.html#education" class="nav-link">Education</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="index.html#skills" class="nav-link">Skills</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="section poems-library" id="poemsLibrary" data-lang="es">
+    <p class="eyebrow reveal-chars poetry-back-eyebrow"><a href="poetry.html">&larr; The Poems</a></p>
+
+    <div class="library-layout">
+      <aside class="library-sidebar reveal-up">
+        <p class="eyebrow reveal-chars">Library</p>
+        <h1 class="section-title reveal-chars">Poems</h1>
+        <p class="library-desc">
+          <span data-lang-text="es">Pensamientos que escribí para darle sentido a los momentos que me formaron.</span>
+          <span data-lang-text="en">Thoughts I wrote down to make sense of the moments that shaped me.</span>
+        </p>
+
+        <div class="library-divider"><span></span><i>&#10022;</i><span></span></div>
+
+        <img class="library-lotus" src="assets/poetry/blue_lotus_water_transparent.png" alt="">
+
+        <div class="lang-toggle poem-page-toggle" role="group" aria-label="Poem language">
+          <button type="button" class="lang-btn is-active" data-lang="es">ES</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+
+        <nav class="library-filters" id="libraryFilters">
+          <button type="button" class="library-filter is-active" data-filter="all">
+            <span data-lang-text="es">Todos los poemas</span><span data-lang-text="en">All Poems</span>
+          </button>
+          <button type="button" class="library-filter" data-filter="love">
+            <span data-lang-text="es">Amor</span><span data-lang-text="en">Love</span>
+          </button>
+          <button type="button" class="library-filter" data-filter="loss">
+            <span data-lang-text="es">Pérdida</span><span data-lang-text="en">Loss</span>
+          </button>
+          <button type="button" class="library-filter" data-filter="memory">
+            <span data-lang-text="es">Memoria</span><span data-lang-text="en">Memory</span>
+          </button>
+          <button type="button" class="library-filter" data-filter="growth">
+            <span data-lang-text="es">Crecimiento</span><span data-lang-text="en">Growth</span>
+          </button>
+          <button type="button" class="library-filter" data-filter="identity">
+            <span data-lang-text="es">Identidad</span><span data-lang-text="en">Identity</span>
+          </button>
+        </nav>
+      </aside>
+
+      <div class="library-list" id="libraryList">
+        <div class="library-row-wrap reveal-up" data-poem-id="poem-1" data-categories="love growth">
+          <a href="poem-1.html" class="library-row">
+            <span class="library-row-thumb"><img src="assets/poetry/poem_card_bg_02_blue_flower_peace.png" alt=""></span>
+            <span class="library-row-body">
+              <span class="library-row-title">
+                <span data-lang-text="es">No quiero alejarme</span>
+                <span data-lang-text="en">I Do Not Want to Walk Away</span>
+              </span>
+              <span class="library-row-desc">
+                <span data-lang-text="es">Un poema silencioso sobre los primeros pasos hacia el amor.</span>
+                <span data-lang-text="en">A quiet poem about the first steps toward love.</span>
+              </span>
+              <span class="library-row-time">1 min</span>
+            </span>
+            <span class="library-row-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <button type="button" class="library-row-like" data-poem-id="poem-1" aria-pressed="false" aria-label="Like this poem">
+            <svg class="library-row-like-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+            <span class="library-row-like-count">0</span>
+          </button>
+        </div>
+
+        <div class="library-row-wrap reveal-up reveal-delay-1" data-poem-id="poem-2" data-categories="love memory loss">
+          <a href="poem-2.html" class="library-row">
+            <span class="library-row-thumb"><img src="assets/poetry/poem_card_bg_03_rainy_september.png" alt=""></span>
+            <span class="library-row-body">
+              <span class="library-row-title">
+                <span data-lang-text="es">Aquel día lluvioso de septiembre</span>
+                <span data-lang-text="en">That Rainy Day in September</span>
+              </span>
+              <span class="library-row-desc">
+                <span data-lang-text="es">Una despedida bajo la lluvia que se vuelve imposible de olvidar.</span>
+                <span data-lang-text="en">A rainy farewell that becomes impossible to forget.</span>
+              </span>
+              <span class="library-row-time">1 min</span>
+            </span>
+            <span class="library-row-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <button type="button" class="library-row-like" data-poem-id="poem-2" aria-pressed="false" aria-label="Like this poem">
+            <svg class="library-row-like-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+            <span class="library-row-like-count">0</span>
+          </button>
+        </div>
+
+        <div class="library-row-wrap reveal-up reveal-delay-2" data-poem-id="poem-3" data-categories="love loss">
+          <a href="poem-3.html" class="library-row">
+            <span class="library-row-thumb"><img src="assets/poetry/poem_card_bg_04_twilight_perhaps.png" alt=""></span>
+            <span class="library-row-body">
+              <span class="library-row-title">
+                <span data-lang-text="es">En un tal vez</span>
+                <span data-lang-text="en">In a Maybe</span>
+              </span>
+              <span class="library-row-desc">
+                <span data-lang-text="es">Dos personas, un silencio, y un amor que nunca comenzó.</span>
+                <span data-lang-text="en">Two people, one silence, and a love that never began.</span>
+              </span>
+              <span class="library-row-time">1 min</span>
+            </span>
+            <span class="library-row-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <button type="button" class="library-row-like" data-poem-id="poem-3" aria-pressed="false" aria-label="Like this poem">
+            <svg class="library-row-like-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+            <span class="library-row-like-count">0</span>
+          </button>
+        </div>
+
+        <div class="library-row-wrap reveal-up reveal-delay-3" data-poem-id="poem-4" data-categories="growth identity memory">
+          <a href="poem-4.html" class="library-row">
+            <span class="library-row-thumb"><img src="assets/poetry/poem_card_bg_01_lantern_memory.png" alt=""></span>
+            <span class="library-row-body">
+              <span class="library-row-title">
+                <span data-lang-text="es">Bajo la tenue llama del verano</span>
+                <span data-lang-text="en">Beneath the Summer's Faint Flame</span>
+              </span>
+              <span class="library-row-desc">
+                <span data-lang-text="es">Un viaje simbólico a través de la negación, el juicio y el renacimiento.</span>
+                <span data-lang-text="en">A symbolic journey through denial, judgment, and rebirth.</span>
+              </span>
+              <span class="library-row-time">5&ndash;6 min</span>
+            </span>
+            <span class="library-row-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <button type="button" class="library-row-like" data-poem-id="poem-4" aria-pressed="false" aria-label="Like this poem">
+            <svg class="library-row-like-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+            <span class="library-row-like-count">0</span>
+          </button>
+        </div>
+
+        <div class="library-row-wrap reveal-up" data-poem-id="poem-5" data-categories="identity growth">
+          <a href="poem-5.html" class="library-row">
+            <span class="library-row-thumb library-row-thumb-placeholder"><img src="assets/poetry/icon_identity_person_transparent.png" alt=""></span>
+            <span class="library-row-body">
+              <span class="library-row-title">
+                <span data-lang-text="es">Lo que solía decir</span>
+                <span data-lang-text="en">What I Used to Say</span>
+              </span>
+              <span class="library-row-desc">
+                <span data-lang-text="es">Una reflexión sobre perder y volver a encontrar quién soy.</span>
+                <span data-lang-text="en">A reflection on losing and rediscovering who I am.</span>
+              </span>
+              <span class="library-row-time">1 min</span>
+            </span>
+            <span class="library-row-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <button type="button" class="library-row-like" data-poem-id="poem-5" aria-pressed="false" aria-label="Like this poem">
+            <svg class="library-row-like-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+            <span class="library-row-like-count">0</span>
+          </button>
+        </div>
+
+        <div class="library-row-wrap reveal-up" data-poem-id="poem-6" data-categories="loss identity">
+          <a href="poem-6.html" class="library-row">
+            <span class="library-row-thumb library-row-thumb-placeholder"><img src="assets/poetry/icon_nature_leaf_transparent.png" alt=""></span>
+            <span class="library-row-body">
+              <span class="library-row-title">
+                <span data-lang-text="es">Camino</span>
+                <span data-lang-text="en">Path</span>
+              </span>
+              <span class="library-row-desc">
+                <span data-lang-text="es">Estar cerca de alguien no siempre significa compartir su camino.</span>
+                <span data-lang-text="en">Being close to someone doesn't always mean sharing their path.</span>
+              </span>
+              <span class="library-row-time">1 min</span>
+            </span>
+            <span class="library-row-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <button type="button" class="library-row-like" data-poem-id="poem-6" aria-pressed="false" aria-label="Like this poem">
+            <svg class="library-row-like-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+            <span class="library-row-like-count">0</span>
+          </button>
+        </div>
+
+        <div class="library-row-wrap reveal-up" data-poem-id="poem-7" data-categories="loss identity memory">
+          <a href="poem-7.html" class="library-row">
+            <span class="library-row-thumb library-row-thumb-placeholder"><img src="assets/poetry/icon_memories_cloud_transparent.png" alt=""></span>
+            <span class="library-row-body">
+              <span class="library-row-title">
+                <span data-lang-text="es">Una carta de despedida</span>
+                <span data-lang-text="en">A Goodbye Letter</span>
+              </span>
+              <span class="library-row-desc">
+                <span data-lang-text="es">Una carta inconclusa entre quien fui y quien llegué a ser.</span>
+                <span data-lang-text="en">An unfinished letter between who I was and who I became.</span>
+              </span>
+              <span class="library-row-time">2&ndash;3 min</span>
+            </span>
+            <span class="library-row-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <button type="button" class="library-row-like" data-poem-id="poem-7" aria-pressed="false" aria-label="Like this poem">
+            <svg class="library-row-like-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+            <span class="library-row-like-count">0</span>
+          </button>
+        </div>
+
+        <div class="library-row-wrap reveal-up" data-poem-id="poem-8" data-categories="memory loss">
+          <a href="poem-8.html" class="library-row">
+            <span class="library-row-thumb library-row-thumb-placeholder"><img src="assets/poetry/icon_hope_star_transparent.png" alt=""></span>
+            <span class="library-row-body">
+              <span class="library-row-title">
+                <span data-lang-text="es">El color del hogar</span>
+                <span data-lang-text="en">The Color of Home</span>
+              </span>
+              <span class="library-row-desc">
+                <span data-lang-text="es">Volver a casa y descubrir que el hogar ya había cambiado.</span>
+                <span data-lang-text="en">Coming home to find that home had already changed.</span>
+              </span>
+              <span class="library-row-time">2&ndash;3 min</span>
+            </span>
+            <span class="library-row-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <button type="button" class="library-row-like" data-poem-id="poem-8" aria-pressed="false" aria-label="Like this poem">
+            <svg class="library-row-like-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+            <span class="library-row-like-count">0</span>
+          </button>
+        </div>
+
+        <div class="library-more reveal-up">
+          <span class="library-more-icon">&#10022;</span>
+          <p>
+            <span data-lang-text="es">Más poemas en camino. Vuelve pronto para leer más.</span>
+            <span data-lang-text="en">More poems are on their way. Check back soon for more.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="footer-brand">
+      <a href="index.html#home" class="nav-logo">FW<span class="nav-logo-dot">.</span></a>
+      <p class="footer-tagline">Building systems, writing poems, and staying close to where I come from.</p>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-col-title">Explore</p>
+      <a href="index.html#about">About</a>
+      <a href="index.html#education">Education</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="music.html">Music</a>
+      <a href="poetry.html">Poetry</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-col-title">Poetry</p>
+      <a href="poetry.html">Four Poems at Fifteen</a>
+      <a href="poems.html">Poems Library</a>
+      <a href="poem-1.html">Poem I</a>
+      <a href="poem-2.html">Poem II</a>
+      <a href="poem-3.html">Poem III</a>
+      <a href="poem-4.html">Poem IV</a>
+      <a href="poem-5.html">Poem V</a>
+      <a href="poem-6.html">Poem VI</a>
+      <a href="poem-7.html">Poem VII</a>
+      <a href="poem-8.html">Poem VIII</a>
+    </div>
+
+    <div class="footer-col footer-connect">
+      <p class="footer-col-title">Let's Connect</p>
+      <a href="mailto:fernawool@gmail.com" class="footer-email">fernanwool@hotmail.com</a>
+      <a href="index.html#contact" class="btn btn-solid footer-say-hello">Say Hello</a>
+    </div>
+  </div>
+
+  <div class="site-footer-bottom">
+    <p>&copy; 2026 Fernando Woolcott. Built with intention.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/poetry.js"></script>
+</body>
+</html>

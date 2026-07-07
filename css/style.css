@@ -319,60 +319,20 @@ img { max-width: 100%; display: block; }
   height: clamp(340px, 38vw, 520px);
 }
 
-.orbit-cards {
-  position: absolute;
-  inset: 0;
+/* Background orbit planet: fixed across every page, docked to a corner by
+   default. On index.html, JS drives its top/left/width directly off scroll
+   position (see main.js) so it moves in step with the page rather than on
+   a delayed transition; pages without a #home section simply keep this
+   docked position. */
+.bg-orbit {
+  position: fixed;
+  top: 16%;
+  left: 88%;
+  width: clamp(100px, 10vw, 155px);
+  height: clamp(100px, 10vw, 155px);
+  transform: translate(-50%, -50%);
+  z-index: 0;
   pointer-events: none;
-}
-.orbit-ring-big {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border: 1px dashed var(--bg-300);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-}
-.ring-big-1 { width: 74%; height: 74%; animation: spin 90s linear infinite; }
-.ring-big-2 { width: 98%; height: 98%; border-color: rgba(172, 194, 239, 0.16); animation: spin-reverse 130s linear infinite; }
-
-.orbit-card {
-  position: absolute;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.55rem 1.15rem;
-  border-radius: 999px;
-  border: 1px solid var(--bg-300);
-  background: rgba(31, 43, 62, 0.75);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  color: var(--text-100);
-  font-size: 0.85rem;
-  font-weight: 500;
-  white-space: nowrap;
-  pointer-events: auto;
-  transform: translate(-50%, -50%);
-  transition: border-color 0.3s ease, background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-.orbit-card-icon { width: 16px; height: 16px; color: var(--primary-300); transition: color 0.3s ease; flex: 0 0 auto; }
-.orbit-card-icon svg { width: 100%; height: 100%; }
-.orbit-card:hover {
-  border-color: var(--primary-200);
-  background: rgba(61, 90, 128, 0.85);
-  transform: translate(-50%, -50%) scale(1.1);
-  box-shadow: 0 12px 32px -12px rgba(172, 194, 239, 0.45);
-}
-.orbit-card:hover .orbit-card-icon { color: var(--accent-200); }
-
-.card-software { top: 3%; left: 58%; }
-.card-data { top: 40%; left: 2%; }
-.card-music { top: 42%; left: 96%; }
-.card-poetry { top: 90%; left: 12%; }
-.card-photography { top: 92%; left: 74%; }
-.orbit-field {
-  position: relative;
-  width: clamp(160px, 18vw, 250px);
-  height: clamp(160px, 18vw, 250px);
 }
 .planet {
   position: absolute;
@@ -403,27 +363,6 @@ img { max-width: 100%; display: block; }
 @keyframes planet-rotate {
   0% { background-position: 0 0; filter: hue-rotate(0deg); }
   100% { filter: hue-rotate(8deg); }
-}
-
-.orbit-ring {
-  position: absolute;
-  border: 1px dashed var(--bg-300);
-  border-radius: 50%;
-}
-.ring-1 { inset: -14%; animation: spin 40s linear infinite; }
-.ring-2 { inset: -26%; border-color: var(--primary-100); animation: spin-reverse 55s linear infinite; }
-.ring-3 { inset: -40%; border-style: solid; border-color: rgba(172,194,239,0.25); animation: spin 70s linear infinite; }
-
-.satellite {
-  position: absolute;
-  top: -4px;
-  left: 50%;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--accent-200);
-  box-shadow: 0 0 12px 3px rgba(206, 232, 255, 0.7);
-  transform: translateX(-50%);
 }
 
 @keyframes spin { to { transform: rotate(360deg); } }
@@ -915,15 +854,9 @@ img { max-width: 100%; display: block; }
   .hero-inner { grid-template-columns: 1fr; text-align: center; }
   .hero-body { margin-left: auto; margin-right: auto; }
   .hero-actions { justify-content: center; }
-  .hero-visual { order: -1; height: clamp(320px, 92vw, 420px); }
+  .hero-visual { order: -1; height: clamp(140px, 46vw, 200px); }
   .scroll-cue { display: none; }
-  .orbit-card { padding: 0.4rem 0.8rem; font-size: 0.72rem; gap: 0.35rem; }
-  .orbit-card-icon { width: 13px; height: 13px; }
-  .card-software { top: 2%; left: 62%; }
-  .card-data { top: 38%; left: 2%; }
-  .card-music { top: 42%; left: 98%; }
-  .card-poetry { top: 92%; left: 14%; }
-  .card-photography { top: 94%; left: 78%; }
+  .bg-orbit { top: 9%; left: 88%; width: clamp(70px, 18vw, 100px); height: clamp(70px, 18vw, 100px); }
   .timeline-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
   .contact-inner { grid-template-columns: 1fr; }

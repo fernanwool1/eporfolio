@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Color of Home — Fernando Woolcott</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/poetry.css">
+</head>
+<body>
+
+<div class="starfield" id="starfield" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html#home" class="nav-logo">FW<span class="nav-logo-dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#home" class="nav-link">Home</a>
+      <a href="index.html#about" class="nav-link">About</a>
+      <a href="index.html#education" class="nav-link">Education</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="index.html#skills" class="nav-link">Skills</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="section poem-page" id="poemPage" data-lang="en">
+    <p class="eyebrow reveal-chars poetry-back-eyebrow"><a href="poems.html">&larr; Poems Library</a></p>
+
+    <div class="section-head poem-page-head">
+      <p class="eyebrow reveal-chars">Poem VIII</p>
+      <h1 class="section-title reveal-chars poem-page-title">
+        <span data-lang-text="es">El color del hogar</span>
+        <span data-lang-text="en">The Color of Home</span>
+      </h1>
+    </div>
+
+    <div class="poem-theme-tags reveal-up">
+      <span class="poem-theme-tag"><span data-lang-text="es">Memoria</span><span data-lang-text="en">Memory</span></span>
+      <span class="poem-theme-tag"><span data-lang-text="es">Nostalgia</span><span data-lang-text="en">Nostalgia</span></span>
+      <span class="poem-theme-tag"><span data-lang-text="es">Hogar</span><span data-lang-text="en">Home</span></span>
+      <span class="poem-theme-tag"><span data-lang-text="es">Soledad</span><span data-lang-text="en">Loneliness</span></span>
+    </div>
+
+    <div class="lang-toggle poem-page-toggle" role="group" aria-label="Poem language">
+      <button type="button" class="lang-btn" data-lang="es">ES</button>
+      <button type="button" class="lang-btn is-active" data-lang="en">EN</button>
+    </div>
+
+    <img class="poem-page-divider reveal-up" src="assets/poetry/crescent_divider_transparent.png" alt="">
+
+    <div class="poem-layout">
+      <aside class="poem-sidebar poem-sidebar-left reveal-up">
+        <div class="poem-info-card">
+          <p class="poem-info-title"><span data-lang-text="es">Sobre este poema</span><span data-lang-text="en">About this poem</span></p>
+
+          <div class="poem-info-row">
+            <span class="poem-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg></span>
+            <div>
+              <p class="poem-info-label"><span data-lang-text="es">Temas</span><span data-lang-text="en">Themes</span></p>
+              <p class="poem-info-value"><span data-lang-text="es">Memoria, nostalgia, hogar, soledad</span><span data-lang-text="en">Memory, nostalgia, home, loneliness</span></p>
+            </div>
+          </div>
+
+          <div class="poem-info-row">
+            <span class="poem-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg></span>
+            <div>
+              <p class="poem-info-label"><span data-lang-text="es">Año</span><span data-lang-text="en">Year</span></p>
+              <p class="poem-info-value">2025</p>
+            </div>
+          </div>
+
+          <div class="poem-info-row">
+            <span class="poem-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 4 5.5 4 9s-1.5 6.5-4 9c-2.5-2.5-4-5.5-4-9s1.5-6.5 4-9Z"/></svg></span>
+            <div>
+              <p class="poem-info-label"><span data-lang-text="es">Idioma original</span><span data-lang-text="en">Original language</span></p>
+              <p class="poem-info-value"><span data-lang-text="es">Inglés</span><span data-lang-text="en">English</span></p>
+            </div>
+          </div>
+
+          <div class="poem-info-row">
+            <span class="poem-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+            <div>
+              <p class="poem-info-label"><span data-lang-text="es">Tiempo de lectura</span><span data-lang-text="en">Reading time</span></p>
+              <p class="poem-info-value">2&ndash;3 min</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="poem-meaning-box">
+          <img class="poem-meaning-icon" src="assets/poetry/icon_hope_star_transparent.png" alt="">
+          <p class="poem-meaning-title"><span data-lang-text="es">Qué significa este poema</span><span data-lang-text="en">What this poem means</span></p>
+          <p data-lang-text="es">El color del hogar es un poema reflexivo sobre la memoria, la distancia y el regreso a un lugar que ya no se siente igual. A través de la imagen de la luna como testigo silencioso, el poema explora la soledad, el consejo, la nostalgia y el dolor de descubrir que el hogar puede cambiar mientras estamos lejos.</p>
+          <p data-lang-text="en">The Color of Home is a reflective poem about memory, distance, and returning to a place that no longer feels the same. Through the image of the moon as a silent witness, the poem explores loneliness, advice, nostalgia, and the pain of realizing that home can change while we are gone.</p>
+        </div>
+
+        <div class="poem-sidebar-feather">
+          <img src="assets/poetry/poetry-quill.png" alt="">
+        </div>
+      </aside>
+
+      <article class="poem-main reveal-up">
+        <span class="poem-drop-cap" data-lang-text="es">S</span>
+        <span class="poem-drop-cap" data-lang-text="en">I</span>
+      <div class="poem-full-text" data-lang-text="es">
+        <p>Si la luna viene a mi ventana esta noche,<br>podría desear que se quedara.</p>
+        <p>He estado esperando a alguien que pueda escuchar,<br>alguien que pueda ver a través del mundo entero,<br>alguien que haya viajado por la tierra<br>y haya visto nuestros problemas,<br>alguien tan antiguo como la tierra misma,<br>solo para darme un consejo.</p>
+        <p>Cualquier consejo de la luna<br>podría resolverlo todo.</p>
+        <p>Pero ella parece preocupada.</p>
+        <p>¿Por qué?</p>
+        <p>Algunas personas resuelven sus problemas solas,<br>mientras otras no.</p>
+        <p>¿Cómo algunos pueden encontrar la luz<br>en la oscuridad de la noche,<br>mientras otros se quedan atrapados<br>bajo la luz de la luna?</p>
+        <p>Mi primer encuentro<br>con el color de la luna.</p>
+        <p>Vengo de un pueblo extraño,<br>un lugar donde la luna se sienta<br>junto a los botes de los pescadores,<br>esperando que vuelvan a casa.</p>
+        <p>Un hogar en un pueblo pequeño,<br>un pueblo con un jardín de flores<br>dentro de una imagen azul.</p>
+        <p>Mucho tiempo después de mi desaparición,<br>volví a casa.</p>
+        <p>Había esperado tanto<br>volver a ver mi hogar,<br>ver el jardín que solía regar,<br>la casa que solía limpiar,<br>las flores,<br>las fotografías,<br>los recuerdos.</p>
+        <p>Solo quería volver a ver<br>el color del hogar.</p>
+        <p>Pero todo había cambiado.</p>
+        <p>Todos mis recuerdos,<br>mis amigos,<br>la imagen azul de la luna<br>sobre el pueblo&mdash;</p>
+        <p>todo se había ido.</p>
+        <p>Si la luna viene a mi ventana esta noche,<br>la admiraré desde lejos,<br>solo para recuperar algo&mdash;<br>algo que ya se fue.</p>
+      </div>
+
+      <div class="poem-full-text" data-lang-text="en">
+        <p>If the moon comes to my window tonight,<br>I could wish for her to stay.</p>
+        <p>I have been waiting for someone who can listen,<br>someone who can see through the whole world,<br>someone who has traveled across the earth<br>and seen our problems,<br>someone as old as the earth itself,<br>just to give me some advice.</p>
+        <p>Any advice from the moon<br>could solve anything.</p>
+        <p>But she seems worried.</p>
+        <p>About what?</p>
+        <p>Some people solve their problems on their own,<br>while others do not.</p>
+        <p>How can some find light<br>in the darkness of the night,<br>while others remain stuck<br>under the moonlight?</p>
+        <p>My first encounter<br>with the color of the moon.</p>
+        <p>I came from a strange town,<br>a place where the moon sits<br>beside the fishermen&rsquo;s boats,<br>waiting for them to return home.</p>
+        <p>A home in a small town,<br>a town with a garden of flowers<br>inside a blue picture.</p>
+        <p>Long after my disappearance,<br>I went back home.</p>
+        <p>I had been waiting<br>to see my home again,<br>to see the garden I used to water,<br>the house I used to clean,<br>the flowers,<br>the pictures,<br>the memories.</p>
+        <p>I just wanted to see<br>the color of home again.</p>
+        <p>But everything had changed.</p>
+        <p>All my memories,<br>my friends,<br>the blue picture of the moon<br>over the town&mdash;</p>
+        <p>everything was gone.</p>
+        <p>If the moon comes to my window tonight,<br>I will admire her from afar,<br>just to recover something&mdash;<br>something already gone.</p>
+      </div>
+
+      <img class="poem-main-lotus reveal-up" src="assets/poetry/blue_lotus_water_transparent.png" alt="">
+      </article>
+
+      <aside class="poem-sidebar poem-sidebar-right reveal-up">
+        <div class="poem-nav-list">
+          <a href="poem-7.html" class="poem-nav-item">
+            <span class="poem-nav-thumb poem-nav-thumb-placeholder"><img src="assets/poetry/icon_memories_cloud_transparent.png" alt=""></span>
+            <div>
+              <p class="poem-nav-label"><span data-lang-text="es">Anterior</span><span data-lang-text="en">Previous</span></p>
+              <p class="poem-nav-title"><span data-lang-text="es">Una carta de despedida</span><span data-lang-text="en">A Goodbye Letter</span></p>
+              <p class="poem-nav-desc"><span data-lang-text="es">Una carta inconclusa entre quien fui y quien llegué a ser.</span><span data-lang-text="en">An unfinished letter between who I was and who I became.</span></p>
+            </div>
+          </a>
+          <a href="poem-5.html" class="poem-nav-item is-next">
+            <span class="poem-nav-thumb poem-nav-thumb-placeholder"><img src="assets/poetry/icon_identity_person_transparent.png" alt=""></span>
+            <div>
+              <p class="poem-nav-label"><span data-lang-text="es">Siguiente</span><span data-lang-text="en">Next</span></p>
+              <p class="poem-nav-title"><span data-lang-text="es">Lo que solía decir</span><span data-lang-text="en">What I Used to Say</span></p>
+              <p class="poem-nav-desc"><span data-lang-text="es">Una reflexión sobre perder y volver a encontrar quién soy.</span><span data-lang-text="en">A reflection on losing and rediscovering who I am.</span></p>
+            </div>
+          </a>
+          <a href="poems.html" class="poem-explore-card">
+            <span class="poem-explore-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H12v18H6.5A2.5 2.5 0 0 1 4 18.5v-13Z"/><path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H12v18h5.5a2.5 2.5 0 0 0 2.5-2.5v-13Z"/></svg></span>
+            <div>
+              <p class="poem-explore-title"><span data-lang-text="es">Explorar más</span><span data-lang-text="en">Explore more</span></p>
+              <p class="poem-explore-desc"><span data-lang-text="es">Ver todos los poemas</span><span data-lang-text="en">View all poems</span></p>
+            </div>
+          </a>
+        </div>
+
+        <div class="poem-illustration">
+          <img src="assets/poetry/poetry-quill.png" alt="">
+          <p class="poem-illustration-tag">
+            <span data-lang-text="es">Las palabras también son constelaciones.</span>
+            <span data-lang-text="en">Words are also constellations.</span>
+          </p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="poem-behind reveal-up">
+      <div class="poem-behind-text">
+        <p class="poem-behind-heading"><span data-lang-text="es">Detrás del poema</span><span data-lang-text="en">Behind the poem</span></p>
+        <p data-lang-text="es">Escrito después de regresar a un hogar que ya no se sentía igual, este poema usa la luna como testigo de la soledad y la memoria. Pertenece al mundo emocional de la nostalgia, la distancia y la callada certeza de que el hogar puede cambiar mientras estamos lejos.</p>
+        <p data-lang-text="en">Written after returning to a home that no longer felt the same, this poem uses the moon as a witness to loneliness and memory. It belongs to the emotional world of nostalgia, distance, and the quiet realization that home can change while we are away.</p>
+      </div>
+      <div class="poem-behind-image">
+        <img src="assets/poetry/quote_background_andes_twilight.png" alt="">
+      </div>
+    </div>
+
+    <p class="poem-page-tagline reveal-up">
+      <span data-lang-text="es">Escribir es mi forma de no desaparecer.</span>
+      <span data-lang-text="en">Writing is my way of not disappearing.</span>
+    </p>
+
+    <div class="poem-bottom-nav reveal-up">
+      <a href="poem-7.html" class="poem-bottom-btn">&larr; <span data-lang-text="es">Poema anterior</span><span data-lang-text="en">Previous poem</span></a>
+      <a href="poems.html" class="poem-bottom-btn"><span data-lang-text="es">Volver a la biblioteca</span><span data-lang-text="en">Back to the library</span></a>
+      <a href="poem-5.html" class="poem-bottom-btn"><span data-lang-text="es">Poema siguiente</span><span data-lang-text="en">Next poem</span> &rarr;</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="footer-brand">
+      <a href="index.html#home" class="nav-logo">FW<span class="nav-logo-dot">.</span></a>
+      <p class="footer-tagline">Building systems, writing poems, and staying close to where I come from.</p>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-col-title">Explore</p>
+      <a href="index.html#about">About</a>
+      <a href="index.html#education">Education</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="music.html">Music</a>
+      <a href="poetry.html">Poetry</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-col-title">Poetry</p>
+      <a href="poetry.html">Four Poems at Fifteen</a>
+      <a href="poems.html">Poems Library</a>
+      <a href="poem-1.html">Poem I</a>
+      <a href="poem-2.html">Poem II</a>
+      <a href="poem-3.html">Poem III</a>
+      <a href="poem-4.html">Poem IV</a>
+      <a href="poem-5.html">Poem V</a>
+      <a href="poem-6.html">Poem VI</a>
+      <a href="poem-7.html">Poem VII</a>
+      <a href="poem-8.html">Poem VIII</a>
+    </div>
+
+    <div class="footer-col footer-connect">
+      <p class="footer-col-title">Let's Connect</p>
+      <a href="mailto:fernawool@gmail.com" class="footer-email">fernanwool@hotmail.com</a>
+      <a href="index.html#contact" class="btn btn-solid footer-say-hello">Say Hello</a>
+    </div>
+  </div>
+
+  <div class="site-footer-bottom">
+    <p>&copy; 2026 Fernando Woolcott. Built with intention.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/poetry.js"></script>
+</body>
+</html>

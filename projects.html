@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Fernando Woolcott</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+
+<div class="starfield" id="starfield" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html#home" class="nav-logo">FW<span class="nav-logo-dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#home" class="nav-link">Home</a>
+      <a href="index.html#about" class="nav-link">About</a>
+      <a href="index.html#education" class="nav-link">Education</a>
+      <a href="index.html#projects" class="nav-link">Projects</a>
+      <a href="index.html#skills" class="nav-link">Skills</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="section projects-page" id="projectsPage">
+    <div class="section-head projects-page-head">
+      <p class="eyebrow reveal-chars">What I Build</p>
+      <h1 class="section-title reveal-chars">Projects</h1>
+      <p class="projects-page-subtitle reveal-up">A collection of selected work that reflects my interests, problem-solving approach, and technical growth.</p>
+    </div>
+
+    <div class="featured-project-slot" id="featuredSlot"></div>
+
+    <div class="projects-grid" id="projectsGrid">
+      <article class="project-card reveal-up" data-project="fixmyunit">
+        <div class="project-thumb">
+          <span class="project-thumb-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18"/><circle cx="7" cy="7" r="0.6" fill="currentColor" stroke="none"/></svg></span>
+          <span class="project-thumb-tag">Screenshot coming soon</span>
+        </div>
+        <div class="project-card-body">
+          <h3 class="project-card-title">FixMyUnit</h3>
+          <p class="project-card-desc">A maintenance platform for tenants and small landlords to report issues, track repairs, and keep clear records of every request.</p>
+          <button type="button" class="project-card-cta" data-project-trigger="fixmyunit">
+            Read Case Study
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </article>
+
+      <article class="project-card reveal-up reveal-delay-1" data-project="homecook">
+        <div class="project-thumb">
+          <span class="project-thumb-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18"/><circle cx="7" cy="7" r="0.6" fill="currentColor" stroke="none"/></svg></span>
+          <span class="project-thumb-tag">Screenshot coming soon</span>
+        </div>
+        <div class="project-card-body">
+          <h3 class="project-card-title">HomeCook</h3>
+          <p class="project-card-desc">A recipe and pantry app that helps users find meal ideas based on what they already have, their mood, and the way they want to cook.</p>
+          <button type="button" class="project-card-cta" data-project-trigger="homecook">
+            Read Case Study
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </article>
+
+      <article class="project-card reveal-up reveal-delay-2" data-project="nexusflow">
+        <div class="project-thumb">
+          <span class="project-thumb-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18"/><circle cx="7" cy="7" r="0.6" fill="currentColor" stroke="none"/></svg></span>
+          <span class="project-thumb-tag">Screenshot coming soon</span>
+        </div>
+        <div class="project-card-body">
+          <h3 class="project-card-title">NexusFlow</h3>
+          <p class="project-card-desc">A project management app designed to help teams plan tasks, assign responsibilities, track progress, and visualize timelines with clarity.</p>
+          <button type="button" class="project-card-cta" data-project-trigger="nexusflow">
+            Read Case Study
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </article>
+    </div>
+
+    <div class="projects-cta reveal-up">
+      <span class="projects-cta-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/><circle cx="12" cy="12" r="3.2"/></svg></span>
+      <p>Each project is a step in my journey of continuous learning and building with purpose.</p>
+      <a href="index.html#contact" class="btn btn-solid">Let's Build Something Great</a>
+    </div>
+
+    <div class="project-featured-pool" id="featuredPool" hidden>
+      <div class="project-featured" data-project="fixmyunit" hidden>
+        <div class="project-featured-media">
+          <div class="project-featured-chrome"><span></span><span></span><span></span></div>
+          <div class="project-featured-media-body">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><circle cx="7" cy="6.5" r="0.6" fill="currentColor" stroke="none"/></svg>
+            <span class="project-featured-media-tag">Screenshot coming soon</span>
+          </div>
+        </div>
+        <div class="project-featured-body">
+          <p class="project-featured-eyebrow">Case Study &middot; 01</p>
+          <h2 class="project-featured-title">FixMyUnit</h2>
+          <div class="project-featured-desc">
+            <p>FixMyUnit is a maintenance request platform designed for tenants, small landlords, and property managers who need a clearer way to handle apartment repairs. The idea came from a simple problem: many maintenance issues are reported through texts, calls, or informal conversations, which makes it easy for requests to get lost, ignored, or forgotten.</p>
+            <p>The platform allows tenants to submit repair requests with details such as issue type, urgency, photos, descriptions, and timestamps. Landlords can then review, organize, update, and track each request from submission to completion. The goal is to create a transparent record for both sides, reduce miscommunication, and make building maintenance feel less chaotic.</p>
+            <p>This project reflects my interest in building practical software for real-world systems. It combines communication, accountability, and workflow management into one place, especially for smaller landlords who may not have access to expensive property management tools.</p>
+          </div>
+          <div class="project-highlights">
+            <p class="project-highlights-label">Highlights</p>
+            <ul>
+              <li>Issue reporting with photos, urgency, and timestamps</li>
+              <li>Full request lifecycle tracking, from submission to completion</li>
+              <li>A transparent, shared record for tenants and landlords</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-featured" data-project="homecook" hidden>
+        <div class="project-featured-media">
+          <div class="project-featured-chrome"><span></span><span></span><span></span></div>
+          <div class="project-featured-media-body">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><circle cx="7" cy="6.5" r="0.6" fill="currentColor" stroke="none"/></svg>
+            <span class="project-featured-media-tag">Screenshot coming soon</span>
+          </div>
+        </div>
+        <div class="project-featured-body">
+          <p class="project-featured-eyebrow">Case Study &middot; 02</p>
+          <h2 class="project-featured-title">HomeCook</h2>
+          <div class="project-featured-desc">
+            <p>HomeCook is a recipe and pantry app designed to help people decide what to cook based on the ingredients they already have. Instead of forcing users to search for recipes from scratch, the app starts with what is available in their kitchen and turns those ingredients into possible meals.</p>
+            <p>The project includes features such as a digital pantry, recipe generation, ingredient matching, and mood-based meal discovery. Users can explore recipes depending on how they feel or what kind of cooking experience they want, such as something quick, comforting, focused, or creative. The goal is to make cooking feel less stressful and more personal.</p>
+            <p>HomeCook combines practical utility with a more playful user experience. It is not only about finding recipes; it is about helping users make decisions when they are tired, hungry, busy, or unsure what to make. This project reflects my interest in building apps that feel useful, simple, and human.</p>
+          </div>
+          <div class="project-highlights">
+            <p class="project-highlights-label">Highlights</p>
+            <ul>
+              <li>Digital pantry with smart ingredient matching</li>
+              <li>Mood-based recipe discovery</li>
+              <li>Recommendations built around real kitchens, not perfect ones</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-featured" data-project="nexusflow" hidden>
+        <div class="project-featured-media">
+          <div class="project-featured-chrome"><span></span><span></span><span></span></div>
+          <div class="project-featured-media-body">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><circle cx="7" cy="6.5" r="0.6" fill="currentColor" stroke="none"/></svg>
+            <span class="project-featured-media-tag">Screenshot coming soon</span>
+          </div>
+        </div>
+        <div class="project-featured-body">
+          <p class="project-featured-eyebrow">Case Study &middot; 03</p>
+          <h2 class="project-featured-title">NexusFlow</h2>
+          <div class="project-featured-desc">
+            <p>NexusFlow is a project management application built to help teams organize work, assign tasks, and understand progress more clearly. The project was created around the idea that planning should not feel overwhelming. A good project management tool should help people see what needs to happen, who is responsible, and how the work is moving forward.</p>
+            <p>The app includes task tracking, team member assignment, timeline planning, and visual project organization. It was designed with clarity in mind, allowing users to break larger goals into smaller tasks and follow progress in a more structured way. The project also explored concepts such as Gantt charts, PERT-style planning, and productivity visualization.</p>
+            <p>NexusFlow reflects my interest in systems, coordination, and team workflows. It connects my experience in operations and leadership with software design, turning the kind of planning I saw in real workplaces into a tool that helps people work with more direction.</p>
+          </div>
+          <div class="project-highlights">
+            <p class="project-highlights-label">Highlights</p>
+            <ul>
+              <li>Task tracking with team member assignment</li>
+              <li>Gantt and PERT-style timeline planning</li>
+              <li>Visual, structured progress tracking</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="footer-brand">
+      <a href="index.html#home" class="nav-logo">FW<span class="nav-logo-dot">.</span></a>
+      <p class="footer-tagline">Building systems, writing poems, and staying close to where I come from.</p>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-col-title">Explore</p>
+      <a href="index.html#about">About</a>
+      <a href="index.html#education">Education</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="music.html">Music</a>
+      <a href="poetry.html">Poetry</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-col-title">Poetry</p>
+      <a href="poetry.html">Four Poems at Fifteen</a>
+      <a href="poems.html">Poems Library</a>
+      <a href="poem-1.html">Poem I</a>
+      <a href="poem-2.html">Poem II</a>
+      <a href="poem-3.html">Poem III</a>
+      <a href="poem-4.html">Poem IV</a>
+      <a href="poem-5.html">Poem V</a>
+      <a href="poem-6.html">Poem VI</a>
+      <a href="poem-7.html">Poem VII</a>
+      <a href="poem-8.html">Poem VIII</a>
+    </div>
+
+    <div class="footer-col footer-connect">
+      <p class="footer-col-title">Let's Connect</p>
+      <a href="mailto:fernawool@gmail.com" class="footer-email">fernanwool@hotmail.com</a>
+      <a href="index.html#contact" class="btn btn-solid footer-say-hello">Say Hello</a>
+    </div>
+  </div>
+
+  <div class="site-footer-bottom">
+    <p>&copy; 2026 Fernando Woolcott. Built with intention.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/projects.js"></script>
+</body>
+</html>

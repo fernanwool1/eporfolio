@@ -36,6 +36,57 @@
       <img class="scene-mountains-near" src="assets/background/bg-mountains-near.png" alt="">
     `;
     starfield.after(nightScene);
+
+    /* Background orbit planet: docks to a corner on every page by default;
+       moves to center stage on index.html while the home hero is in view. */
+    const bgOrbit = document.createElement('div');
+    bgOrbit.className = 'bg-orbit';
+    bgOrbit.setAttribute('aria-hidden', 'true');
+    bgOrbit.innerHTML = `
+      <div class="planet">
+        <div class="planet-shade"></div>
+        <div class="planet-terminator"></div>
+      </div>
+    `;
+    nightScene.after(bgOrbit);
+
+    /* On index.html, the planet's position tracks scroll position directly
+       (no eased/delayed transition) so it visibly moves in step with the
+       page as the home hero scrolls away, settling into its corner dock. */
+    const homeSection = document.getElementById('home');
+    if (homeSection && !prefersReducedMotion) {
+      const isMobile = () => window.innerWidth <= 900;
+      const clampNum = (v, min, max) => Math.min(Math.max(v, min), max);
+      const getStates = () => isMobile()
+        ? {
+            home: { top: 20, left: 50, size: clampNum(window.innerWidth * 0.42, 160, 230) },
+            dock: { top: 9, left: 88, size: clampNum(window.innerWidth * 0.18, 70, 100) },
+          }
+        : {
+            home: { top: 53, left: 80, size: clampNum(window.innerWidth * 0.18, 160, 250) },
+            dock: { top: 16, left: 88, size: clampNum(window.innerWidth * 0.10, 100, 155) },
+          };
+
+      let ticking = false;
+      const updateOrbit = () => {
+        ticking = false;
+        const travel = Math.max(homeSection.offsetHeight * 0.7, 1);
+        const progress = clampNum(window.scrollY / travel, 0, 1);
+        const { home, dock } = getStates();
+        const top = home.top + (dock.top - home.top) * progress;
+        const left = home.left + (dock.left - home.left) * progress;
+        const size = home.size + (dock.size - home.size) * progress;
+        bgOrbit.style.top = `${top}%`;
+        bgOrbit.style.left = `${left}%`;
+        bgOrbit.style.width = `${size}px`;
+        bgOrbit.style.height = `${size}px`;
+      };
+      updateOrbit();
+      window.addEventListener('scroll', () => {
+        if (!ticking) { ticking = true; requestAnimationFrame(updateOrbit); }
+      }, { passive: true });
+      window.addEventListener('resize', updateOrbit);
+    }
   }
 
   /* Nav: scrolled state */
@@ -179,7 +230,7 @@
      nothing gets skipped; only once a section is fully in view does the
      next wheel tick commit to the next/previous section. */
   if (!prefersReducedMotion) {
-    const pagerEls = ['#home', '#about', '.motto-strip', '#education', '#skills', '#contact']
+    const pagerEls = ['#home', '#about', '.motto-strip', '#education', '#projects', '#skills', '#contact']
       .map(sel => document.querySelector(sel))
       .filter(Boolean);
 
